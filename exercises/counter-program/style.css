@@ -1,0 +1,26 @@
+body {
+  display: block;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana;
+}
+
+#counter {
+  font-size: 100px;
+  margin: 10px;
+}
+
+#decrease, #increase, #reset {
+  background-color: rgb(91, 176, 255);
+  color: white;
+  border: solid black 1px;
+  padding: 10px;
+  font-weight: bold;
+  margin: 0px 3px;
+  transition: 0.3s;
+}
+
+#decrease:hover, #increase:hover, #reset:hover {
+  background-color: rgb(18, 140, 255);
+}

@@ -1,0 +1,19 @@
+body {
+  display: block;
+  font-family: Arial;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+#age {
+  margin-bottom: 5px;
+}
+
+#submit {
+  padding: 5px 5px;
+}
+
+#yourAge {
+  font-size: 2em;
+}
