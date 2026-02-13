@@ -1,0 +1,46 @@
+:root {
+  --vermelho: rgb(235, 80, 65);
+  --cinza: rgb(25, 25, 25);
+  --branco: rgb(255, 255, 255);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-color: var(--cinza);
+  color: var(--branco);
+  font-family: Jetbrains Mono;
+}
+
+#title {
+  font-size: 72px;
+  text-align: center;
+  font-weight: 300;
+  margin: 10px;
+}
+
+#numberInput {
+  width: 550px;
+  height: 100px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--vermelho);
+  color: var(--branco);
+  font-size: 36px;
+  font-family: JetBrains Mono;
+  align-items: center;
+  text-align: center;
+}
+
+#placeholder {
+  text-align: center;
+  font-size: 54px;
+  font-weight: 300;
+  margin: 10px;
+}
+
+
+
