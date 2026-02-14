@@ -1,5 +1,9 @@
 :root {
   --vermelho: rgb(235, 80, 65);
+  --amarelo: rgb(235, 218, 65);
+  --verde: rgb(74, 235, 65);
+  --azul: rgb(65, 127, 235);
+  --roxo: rgb(150, 65, 235);
   --cinza: rgb(25, 25, 25);
   --branco: rgb(255, 255, 255);
 }
@@ -37,10 +41,36 @@ body {
 
 #placeholder {
   text-align: center;
-  font-size: 54px;
+  font-size: 42px;
   font-weight: 300;
   margin: 10px;
 }
 
+.error {
+  color: var(--vermelho);
+}
 
+.correct {
+  color: var(--verde);
+}
+
+.far {
+  color: var(--branco);
+}
+
+.getting-closer {
+  color: var(--amarelo);
+}
+
+.very-close {
+  color: var(--azul);
+}
+
+.extreme-close {
+  color: var(--roxo);
+}
+
+.highlight {
+  color: var(--branco);
+}
 
