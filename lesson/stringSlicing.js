@@ -1,8 +1,7 @@
-/* 
 const fullName = "Caio Bruno Alves Santana Ferreira"
 
-let firstName = fullName.slice(0, 4) // Retorna os caracteres da primeira posição escolhida até a ultima
-let lastName = fullName.slice(5, 10)
+let firstName1 = fullName.slice(0, 4) // Retorna os caracteres da primeira posição escolhida até a ultima
+let lastName1 = fullName.slice(5, 10)
 
 let firstChar = fullName.slice(0, 1)
 let lastChar = fullName.slice(-1)
@@ -15,7 +14,7 @@ console.log(firstName)
 console.log(lastName)
 console.log(firstChar)
 console.log(lastChar)
-*/
+
 
 const email = "caiosantana757@gmail.com"
 

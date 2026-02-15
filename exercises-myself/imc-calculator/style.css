@@ -9,7 +9,6 @@
   --cinza-claro: #747474;
   --cinza-escuro: #3D3D3D;
   --branco: #FAF8F1;
-
 }
 
 * {
@@ -169,6 +168,13 @@ body {
   flex: 1;
 }
 
+.info-output {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .title-output {
   font-size: 32px;
   font-weight: 400;
@@ -179,6 +185,32 @@ body {
   font-size: 72px;
   font-weight: 700;
   color: var(--cinza-escuro);
+}
+
+.classification {
+  font-size: 38px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.yellow {
+  color: var(--amarelo);
+}
+
+.green {
+  color: var(--verde);
+}
+
+.orange-light {
+  color: var(--laranja-claro);
+}
+
+.orange {
+  color: var(--laranja);
+}
+
+.red {
+  color: var(--vermelho);
 }
 
 .table-imc {
