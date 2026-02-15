@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <title>IMC Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="window-main">
+    <header class="traffic-lights">
+      <div class="red-ball"></div>
+      <div class="yellow-ball"></div>
+      <div class="green-ball"></div>
+    </header>
+    <section class="input-output">
+      <section class="input-section">
+        <div class="title-subtitle">
+          <h1 class="title">Índice de Massa Corpórea</h1>
+          <h2 class="subtitle">
+            Preencha o formulário com as informações solicitadas e compare com os índices.
+          </h2>
+        </div>
+        <div class="container-input">
+          <p class="required"><span style="color:#EB5041">*</span>Altura (cm)</p>
+          <input type="number" placeholder="Digite a altura em cm" id="" class="input-number">
+        </div>
+        <div class="container-input">
+          <p class="required"><span style="color:#EB5041">*</span>Peso (kg)</p>
+          <input type="number" placeholder="Digite o peso em kg" id="" class="input-number">
+        </div>
+        <div class="alert">
+          <img src="icons/info.svg" alt="" class="info-icon">
+          <p class="info-text">O peso e altura do paciente devem ser arredondados para melhor funcionamento da ferramenta </p>
+        </div>
+        <button class="calculate">Calcular</button>
+      </section>
+
+      <div class="line"></div>
+
+      <section class="output-section">
+        <h1 class="title-output">Resultado</h1>
+        <h1 class="result">0</h1>
+        <section class="table-imc">
+          <div class="content">
+            <p class="description-table-imc">Abaixo do peso</p>
+            <p class="number-table-imc"> < 18,5 </p>
+            <div class="color1-table-imc line-table-imc"></div>
+          </div>
+          <div class="content">
+            <p class="description-table-imc">Peso saudável</p>
+            <p class="number-table-imc"> 18,5 a 24,9 </p>
+            <div class="color2-table-imc line-table-imc"></div>
+          </div>
+          <div class="content">
+            <p class="description-table-imc">Sobrepeso</p>
+            <p class="number-table-imc"> 25,0 a 30,0 </p>
+            <div class="color3-table-imc line-table-imc"></div>
+          </div>
+          <div class="content">
+            <p class="description-table-imc">Obeso</p>
+            <p class="number-table-imc"> 30,1 a 39,9 </p>
+            <div class="color4-table-imc line-table-imc"></div>
+          </div>
+          <div class="content">
+            <p class="description-table-imc">Obeso mórbido</p>
+            <p class="number-table-imc"> > 40 </p>
+            <div class="color5-table-imc line-table-imc"></div>
+          </div>
+        </section>
+        <p class="info-text-output">O IMC é calculado divindo o peso (em kg) pela altura ao quadrado (em m), de acordo com a seguinte fórmula: <br> <span style="font-weight: 700;">IMC = peso / (altura x altura).</span></p>
+      </section>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
