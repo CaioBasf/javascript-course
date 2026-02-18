@@ -45,10 +45,10 @@ heightInput.addEventListener("input", function() {
 
 weightInput.addEventListener("input", function() {
 
-  let numbersFixed = this.value.replace(/\D/g, "") 
+  let numbersFixed = this.value.replace(/\D/g, "") // Regex
 
   if(numbersFixed.length > 3) {
-    numbersFixed = numbersFixed.slice(0, 3)
+    numbersFixed = numbersFixed.slice(0, 3) // Limite de Input 
   }
 
   this.value = numbersFixed
@@ -68,21 +68,20 @@ calculate.addEventListener("click", function(){
 
   resultOutput.textContent = numbersFixed
 
-  if(numbersFixed <= 18.5){
+  if(imc <= 18.5){
     setState("yellow")
     classification.textContent = "Abaixo do peso"
-  } else if(numbersFixed >= 18.6 && numbersFixed <= 24.9) {
+  } else if(imc <= 24.9) {
     setState("green")
     classification.textContent = "Peso saudável"
-  } else if(numbersFixed >= 25.0 && numbersFixed <= 30.0) {
+  } else if(imc <= 30) {
     setState("orange-light")
     classification.textContent = "Sobrepeso"
-  } else if(numbersFixed >= 30.1 && numbersFixed <= 39.9) {
+  } else if(imc <= 39.9) {
     setState("orange")
     classification.textContent = "Obeso"
-  } else if(numbersFixed >= 40) {
+  } else if(imc >= 40) {
     setState("red")
     classification.textContent = "Obeso mórbido"
   }
-
 })

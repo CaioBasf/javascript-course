@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Conversor</title>
+
+  <!-- Fonte -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="main-window">
+    <header class="header">
+      <div class="red-ball ball"></div>
+      <div class="yellow-ball ball"></div>
+      <div class="green-ball ball"></div>
+    </header>
+    <div class="main-content">
+      <h1 class="title"> Conversor de Temperatura</h1>
+      <div class="sub-window">
+        <form class="forms">
+          <input type="radio" id="celsToFahre">
+          <input type="radio" id="fahreToCels">
+        </form>
+        <div class="forms-text">
+          <p>Celsius => Fahrenheit</p>
+          <p>Fahrenheit => Celsius</p>
+        </div>
+      </div>
+      <h2 class="answer" id="answer">108.08°C</h2>
+      <button class="submit" id="submit">Enviar</button>
+    </div>
+  </main>
+  
+  <script src="main.js"></script>
+</body>
+</html>

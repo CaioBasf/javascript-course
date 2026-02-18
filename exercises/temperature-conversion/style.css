@@ -1,0 +1,147 @@
+:root {
+  --background: #191919;
+  --gray: #3D3D3D;
+  --gray2: #D9D9D9;
+  --red: #EB5041;
+  --yellow: #EBDD41;
+  --green: #41EB4C;
+  --white: #FAF8F1;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Inter, Arial;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter, Arial;
+  background-color: var(--background);
+  min-height: 100vh;
+}
+
+p {
+  margin: 0px;
+}
+
+.main-window {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  width: 1000px;
+  height: 600px;
+  border-radius: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 1000px;
+  height: 50px;
+  border-radius: 16px 16px 0px 0px ;
+  gap: 5px;
+  background-color: var(--gray);
+}
+
+.red-ball {
+  margin-left: 12px;
+  background-color: var(--red);
+}
+
+.yellow-ball {
+  background-color: var(--yellow);
+}
+
+.green-ball {
+  background-color: var(--green);
+}
+
+.ball {
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+}
+
+.title {
+  font-size: 38px;
+  color: var(--gray);
+  font-weight: 800;
+}
+
+.sub-window {
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  height: 100px;
+  background-color: var(--gray);
+  border-radius: 20px;
+  color: var(--white);
+  gap: 20px;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--red);
+  width: 60px;
+  border-radius: 20px;
+  box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+input[type="radio"] {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background-color: var(--gray2);
+  border-radius: 50%;
+  outline: none;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--red);
+  box-shadow: inset 0 0 0 4px var(--white);
+}
+
+.forms-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.answer {
+  font-size: 36px;
+  color: var(--gray);
+  font-weight: 700;
+}
+
+.submit {
+  height: 50px;
+  width: 150px;
+  border: none;
+  background-color: var(--red);
+  color: var(--white);
+  font-family: Inter, Arial;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
