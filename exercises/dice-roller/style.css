@@ -1,0 +1,137 @@
+:root {
+  --gray-dark: #191919;
+  --gray: #3D3D3D;
+  --white: #FAF8F1;
+  --red: #EB5041;
+  --yellow: #EBDD41;
+  --green: #41EB4C;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Inter, Arial;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--gray-dark);
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.main-window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+  width: 1000px;
+  height: 600px;
+  border-radius: 20px;
+}
+
+.window-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--gray);
+  width: 100%;
+  height: 50px;
+  border-radius: 17px 17px 0px 0px;
+}
+
+.red-ball {
+  margin-left: 12px;
+  background-color: var(--red);
+}
+
+.yellow-ball {
+  background-color: var(--yellow);
+}
+
+.green-ball {
+  background-color: var(--green);
+}
+
+.balls {
+  height: 25px;
+  width: 25px;
+  border-radius: 12px;
+}
+
+.window-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 20px;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 42px;
+  color: var(--gray);
+}
+
+.inputSubmit-sector {
+  display: flex;
+  gap: 8px;
+}
+
+.input {
+  height: 60px;
+  width: 300px;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  background-color: var(--gray);
+  border-radius: 20px;
+  border: none;
+}
+
+.button {
+  height: 60px;
+  width: 100px;
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 700;
+  background-color: var(--red);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counterDices{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.sumDices{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.icons {
+  height: 100px;
+  width: 100px;
+}
+
