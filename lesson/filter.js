@@ -1,6 +1,8 @@
 // .filter() = creates a new array by filtering
 //             out elements
 
+// filter needs to return true or false
+
 /* 
 let numbers = [1, 2, 3, 4, 5, 6, 7]
 let evenNums = numbers.filter(isEven)
